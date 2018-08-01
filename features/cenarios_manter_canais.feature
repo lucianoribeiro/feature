@@ -162,7 +162,7 @@ Esquema do Cenario: Filtar resultados da listagem
         | Responsabilidade    | Responsável                    |
 
 #10
-Cenario: Validar alteração dados unicos
+Esquema do Cenario: Validar alteração dados unicos
   Dado que estou logado na área administrativa da adtsys
   E os seguintes dados existentes na tabela "CANAIS"
     | ID | RAZÃO SOCIAL                    | NOME FANTASIA                   | CNPJ               | EMAIL ADMINISTRADOR               | NOME                   | TELEFONE        | EMAIL                             | RESPONSABILIDADE                                   |
@@ -175,8 +175,8 @@ Cenario: Validar alteração dados unicos
   Quando eu atualizo o campo <CAMPO> de <VALOR_ANTERIOR> para <NOVO_VALOR>
   E clico no botão "Salvar"
   Então o sistema deve exibir a seguinte mensagem de erro <MENSAGEM>
-
-
+  
+  Exemplos:
     | <CAMPO>             | <VALOR_ANTERIOR>                                  | <NOVO_VALOR>                                       | <MENSAGEM>                               |
     | CNPJ                | 19.111.127/0001-06                                | 27.593.329/0001-60                                 | CNPJ informado já existe!                |
     | Email administrador | larissa.espinosa@adtsys.com.br                    | larissasitta.espinosa@hotmail.com                  | Email administrador informado já existe! |
