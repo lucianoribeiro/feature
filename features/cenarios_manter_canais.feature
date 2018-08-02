@@ -170,8 +170,7 @@ Esquema do Cenario: Validar alteração dados unicos
     | 2  | Marina e Larissa Informática ME | Marina e Larissa Informática ME | 27.593.329/0001-60 | larissasitta.espinosa@hotmail.com | Larissa Espinosa       | (19) 99773-1976 | larissasitta.espinosa@hotmail.com | Responsável pela venda do Orquestrador em Pedreira |
   Quando clico no canal "Larissa e Mariana Eletrônica ME"
   E clico no botão "Atualizar"  
-  #Verificar com dev
-  Então devera abrir uma tela de atualização
+  Então devera abrir uma tela de atualização, exibindo os campos editaveis
   Quando eu atualizo o campo <CAMPO> de <VALOR_ANTERIOR> para <NOVO_VALOR>
   E clico no botão "Salvar"
   Então o sistema deve exibir a seguinte mensagem de erro <MENSAGEM>
